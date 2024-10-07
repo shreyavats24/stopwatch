@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(112, 106, 112);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    /* margin: auto; */
+}
+
+.container {
+    margin: 40px 330px;
+    height: 150px;
+    width: 500px;
+    flex-direction: column;
+    padding: 50px 50px 70px 50px;
+    background: #2a2a2a;
+    border: 2px solid white;
+    outline: 2px solid white;
+    outline-offset: 8px;
+    position: relative;
+}
+
+#heading {
+    position: absolute;
+    top: 0;
+    left: 228px;
+    font-size: 35px;
+}
+
+#time {
+    margin: auto;
+    font-size: 90px;
+    color: rgb(228, 65, 5);
+    padding: 20px;
+    align-items: center;
+    background-color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border: 3px solid #e44105;
+
+}
+
+.butns {
+    font-size: 15px;
+    padding: 15px;
+    background-color: grey;
+    margin: 10px 95px;
+    /* border-radius:50%; */
+    align-items: center;
+    border: none;
+}
+
+#buttons {
+    position: relative;
+    /* border: 1px solid blueviolet;*/
+}
+
+#stop {
+    color: #d82222;
+    background-color: rgb(146, 49, 49);
+    outline: 2px solid brown;
+    outline-offset: 2px;
+    display: none;
+    position: absolute;
+    right: 8vh;
+}
+
+#LapTime,
+#reset,
+#resume,
+#startTime {
+    position: absolute;
+    color: rgb(16, 15, 15);
+    background-color: grey;
+    outline: 2px solid rgb(195, 193, 193);
+    outline-offset: 2px;
+}
+
+#startTime {
+    position: absolute;
+    right: 8vh;
+}
+
+#LapTime,
+#reset {
+    right: 33vh;
+}
+
+#lapsList>li::before {
+    content: "⏱️ ";
+}
+
+#reset {
+    /* position: absolute; */
+    display: none;
+}
+
+#resume {
+    display: none;
+    font-size: 15px;
+    right: 3vh;
+}
+
+#resume:hover,
+#reset:hover {
+    background-color: rgb(155, 150, 150);
+}
+
+#lapsList {
+    margin: 30px 150px;
+    max-height: 180px;
+    overflow-y: scroll;
+}
+
+#lapsList>li {
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+#listPosition {
+    position: relative;
+}
+
+#timeSide {
+    position: absolute;
+    right: 20px;
+}
